@@ -33,5 +33,10 @@ class Controller
 	{
 		return $this->container->get('connection')->getConnection();
 	}
+	
+	public function getRepositoryManager()
+    	{
+        	return $this->container->get('repositoryManager');
+    	}
 
 }

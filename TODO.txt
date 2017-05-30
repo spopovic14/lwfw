@@ -1,0 +1,9 @@
+TODO:
+
+- Back end:
+    - Database abstraction
+    - Models
+    - Autoload vendor libraries
+
+- Front end:
+    - Everything

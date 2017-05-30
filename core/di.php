@@ -7,6 +7,7 @@ $container = new Core\Base\Container;
  */
 
 $container->addService('connection', new Core\Database\Connection);
+$container->addService('repositoryManager', (new Core\Database\RepositoryManager($container))->loadRepositories());
 
 
 /*

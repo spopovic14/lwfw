@@ -48,7 +48,8 @@ class HomeController extends Controller
 
 	public function home()
 	{
-		$user = User::getById($this->getDb(), 1);
+		$rm = $this->getRepositoryManager();
+		$user = $rm->getRepository('User')->getById(1);
 		return $this->render('home.temp.php', [
 			'other' => $user->getName()
 		]);

@@ -11,7 +11,7 @@ class Controller
 	protected $container;
 
 	
-	public function render($template, $arguments)
+	public function render($template, $arguments = [])
 	{
 		$response = new \Core\Http\HttpResponse($template, $arguments);
 		return $response;

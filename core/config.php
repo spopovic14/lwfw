@@ -6,6 +6,6 @@ define('APP_NAME', 'gymtracker');
 // Database
 define('DRIVER', 'mysql');
 define('HOST', 'localhost');
-define('DBNAME', 'gymtracker');
+define('DBNAME', 'dbname');
 define('DBUSER', 'root');
 define('DBPASS', '');

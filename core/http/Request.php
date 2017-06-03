@@ -45,6 +45,11 @@ class Request
 	{
 		return $_SERVER['AUTH_TYPE'];
 	}
+	
+	public static function getPostData()
+	{
+		return json_decode(file_get_contents('php://input'), true);
+	}
 
 
 }
